@@ -32,7 +32,7 @@ class CookieHandler
      */
     public function save(array $categories, string $key): void
     {
-        $this->saveCookie(CookieNameEnum::COOKIE_CONSENT_NAME, date('r'));
+        $this->saveCookie(CookieNameEnum::COOKIE_CONSENT_NAME, date('c'));
         $this->saveCookie(CookieNameEnum::COOKIE_CONSENT_KEY_NAME, $key);
 
         foreach ($categories as $category => $permitted) {
